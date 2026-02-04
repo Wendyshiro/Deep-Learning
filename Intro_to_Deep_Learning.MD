@@ -28,5 +28,14 @@ The weight, w and the bias b are part of a linear regression within each neuron.
 
 The linear regression equation, h=wx + b is inserted into the activation function f(h)
 
+There are several activation functions:
+ 1. Softmax - is commonly used for multi class classification problems using probability to "soften" the output of a logistic regression
+ 2. Tanh - the tanh activation has historically performed better than the sigmoid activation on similar problem sets.
+   ** e^x - e^-x/ e^x + e^-x**
+ 3. Sigmoid- the exact function used in logistic regression. Popular choice for activation but computationally expensive than ReLUs.
+
+ Activation functions are passed the results of wx + b and generate non linerarity.
+
+
 ## Rectified Linear Unit (ReLU)
 An activation function that outputs 0 when h < 0 and outputs h when h > 0
